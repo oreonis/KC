@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/shop.min.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__top">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/icon/logo.svg" alt="logo">
+      </a>
+      <nav class="menu">
+        <button class="menu__btn">
+          <span></span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a class="menu__list-link " href="index.html">Главная</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="https://www.youtube.com/channel/UCHhnuvn4BtTM7-Q5ikY_VWQ" target="_blank">Обзор</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="index.html#about">О нас</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link menu__list-link--active" href="shop.html">Магазин</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+    <main class="main">
+     <section class="top" style="background-image: url('images/top-bg.jpg');">
+  <div class="container">
+    <p class="top__subtitle">Korean Cars Delivery</p>
+    <h2 class="top__title">Магазин</h2>
+    <div class="dreadcrumbs">
+      <ul class="dreadcrumbs__list">
+        <li class="dreadcrumbs__item">
+          <a class="dreadcrumbs__link" href="#">Главная</a>
+        </li>
+        <li class="dreadcrumbs__item">
+          <span class="dreadcrumbs__link" href="#">Магазин</span>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</section>
+     <section class="catalog">
+  <div class="container">
+    <div class="catalog__inner">
+      <div class="catalog__filters">
+        <h3 class="catalog__filters-title">Фильтри</h3>
+        <div class="filter">
+          <div class="filter__item">
+            <input class="filter__item-input" type="checkbox" id="filter-1">
+            <label class="filter__item-title" for="filter-1">Товар</label>
+            <div class="filter__item-text">
+              <form class="filter-color__form" action="#">
+                <label class="filter-color__label">
+                  <span class="filter-color__text">Запчасти</span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox filter-color__checkbox--white"></span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">Косметика</span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox filter-color__checkbox--white"></span>
+                  </div>
+                </label>
+                <label class="filter-color__label">
+                  <span class="filter-color__text">Телефоны</span>
+                  <div class="filter-color__box">
+                    <input class="filter-color__input" type="checkbox">
+                    <span class="filter-color__checkbox filter-color__checkbox--white"></span>
+                  </div>
+                </label>
+              </form>
+            </div>
+          </div>
+          <div class="filter__item">
+            <input class="filter__item-input" type="checkbox" id="filter-2">
+            <label class="filter__item-title" for="filter-2">Цена</label>
+            <div class="filter__item-text filter-price">
+              <form class="filter-price__form" action="#">
+                <input class="filter-price__input" type="text" data-min="1000" data-max="100000" data-from="5000"
+                  data-to="80000">
+                <label class="filter-price__label">
+                  <span class="filter-price__span">Цена:
+                    $<span class="filter-price__from"></span> -
+                    $<span class="filter-price__to"></span>
+                  </span>
+                  <button class="filter-price__btn button" type="submit">Фильтр</button>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-content">
+        <div class="catalog-content__filter">
+          <button class="catalog__filter-btn">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14 0V1.16667L8.75 6.41667V14L5.25 11.6667V6.41667L0 1.16667V0L14 0ZM12.3594 1.16667H1.64062L5.72396 5.25H8.27604L12.3594 1.16667ZM7.58333 6.41667H6.41667V11.0286L7.58333 11.776V6.41667Z"
+                fill="#fff" />
+            </svg>
+          </button>
+          <p class="catalog-content__filter-text">сортировка :</p>
+          <div class="catalog-content__filter-selects">
+            <form class="catalog-content__filter-form" action="#">
+              <select class="catalog-content__filter-sort select-style">
+                <option value="">по умолчанию</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+              <select class="catalog-content__filter-show select-style">
+                <option value="">показать 12</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </form>
+          </div>
+        </div>
+
+
+
+
+        <div class="catalog-content__inner">
+
+          <div class="shop-content__item">
+            <a class="shop-content__item-box" href="shop-product.html">
+              <p class="shop-content__item-subtitle">код товара 123456</p>
+              <img class="shop-content__item-img" src="images/product/product.png" alt="card product">
+              <h4 class="shop-content__item-title">Смартфон APPLE iPhone 11 64GB Black</h4>
+              <div class="shop-content__item-prices">
+                <p class="shop-content__item-price">$829</p>
+                <a class="shop-content__item-btn button" href="#">купить</a>
+              </div>
+            </a>
+          </div>
+          <div class="shop-content__item">
+            <a class="shop-content__item-box" href="shop-product.html">
+              <p class="shop-content__item-subtitle">код товара 123456</p>
+              <img class="shop-content__item-img" src="images/product/product.png" alt="card product">
+              <h4 class="shop-content__item-title">Смартфон APPLE iPhone 11 64GB Black</h4>
+              <div class="shop-content__item-prices">
+                <p class="shop-content__item-price">$829</p>
+                <a class="shop-content__item-btn button" href="#">купить</a>
+              </div>
+            </a>
+          </div>
+          <div class="shop-content__item">
+            <a class="shop-content__item-box href="shop-product.html"">
+              <p class="shop-content__item-subtitle">код товара 123456</p>
+              <img class="shop-content__item-img" src="images/product/product.png" alt="card product">
+              <h4 class="shop-content__item-title">Смартфон APPLE iPhone 11 64GB Black</h4>
+              <div class="shop-content__item-prices">
+                <p class="shop-content__item-price">$829</p>
+                <a class="shop-content__item-btn button" href="#">купить</a>
+              </div>
+            </a>
+          </div>
+          <div class="shop-content__item">
+            <a class="shop-content__item-box" href="shop-product.html">
+              <p class="shop-content__item-subtitle">код товара 123456</p>
+              <img class="shop-content__item-img" src="images/product/product.png" alt="card product">
+              <h4 class="shop-content__item-title">Смартфон APPLE iPhone 11 64GB Black</h4>
+              <div class="shop-content__item-prices">
+                <p class="shop-content__item-price">$829</p>
+                <a class="shop-content__item-btn button" href="">купить</a>
+              </div>
+            </a>
+          </div>
+          <div class="shop-content__item">
+            <a class="shop-content__item-box" href="shop-product.html">
+              <p class="shop-content__item-subtitle">код товара 123456</p>
+              <img class="shop-content__item-img" src="images/product/product.png" alt="card product">
+              <h4 class="shop-content__item-title">Смартфон APPLE iPhone 11 64GB Black</h4>
+              <div class="shop-content__item-prices">
+                <p class="shop-content__item-price">$829</p>
+                <a class="shop-content__item-btn button" href="#">купить</a>
+              </div>
+            </a>
+          </div>
+          <div class="shop-content__item">
+            <a class="shop-content__item-box" href="shop-product.html">
+              <p class="shop-content__item-subtitle">код товара 123456</p>
+              <img class="shop-content__item-img" src="images/product/product.png" alt="card product">
+              <h4 class="shop-content__item-title">Смартфон APPLE iPhone 11 64GB Black</h4>
+              <div class="shop-content__item-prices">
+                <p class="shop-content__item-price">$829</p>
+                <a class="shop-content__item-btn button" href="#">купить</a>
+              </div>
+            </a>
+          </div>
+          <div class="shop-content__item">
+            <a class="shop-content__item-box" href="shop-product.html">
+              <p class="shop-content__item-subtitle">код товара 123456</p>
+              <img class="shop-content__item-img" src="images/product/product.png" alt="card product">
+              <h4 class="shop-content__item-title">Смартфон APPLE iPhone 11 64GB Black</h4>
+              <div class="shop-content__item-prices">
+                <p class="shop-content__item-price">$829</p>
+                <a class="shop-content__item-btn button" href="">купить</a>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="pagination">
+          <a class="pagination__prev pagination__arrows" href="#"></a>
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--active" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <span class="pagination__link">....</span>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">10</a>
+            </li>
+          </ul>
+          <a class="pagination__next pagination__arrows" href="#"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+     <section class="contacts" id="contacts">
+  <div class="container">
+    <div class="contacts__inner">
+      <div class="contacts__info">
+        <h2 class="title">
+          Контакты
+        </h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__item-title">Адрес</p>
+            <p class="contacts__item-text">Киев, Подол</p>
+            <p class="contacts__item-text">ул. Нижний Вал, д.54</p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__item-title">Время работы</p>
+            <p class="contacts__item-text">Пн-Сб: с 9:00 до 19:00</p>
+            <p class="contacts__item-text">Вс: выходной</p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__item-title">Телефон</p>
+            <p class="contacts__item-text">+82 10 2253 8902</p>
+          </li>
+          <li class="contacts__item">
+            <div class="social">
+              <a class="social__link" href="https://www.youtube.com/channel/UCHhnuvn4BtTM7-Q5ikY_VWQ">
+                <img class="social__img" src="images/icon/youtube.svg" alt="youtube icon">
+              </a>
+              <a class="social__link" href="#">
+                <img class="social__img" src="images/icon/telegram.svg" alt="telegram icon">
+              </a>
+              <a class="social__link" href="#">
+                <img class="social__img" src="images/icon/whatsapp.svg" alt="whatsapp icon">
+              </a>
+              <a class="social__link" href="#">
+                <img class="social__img" src="images/icon/facebook.svg" alt="facebook icon">
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <form class="contacts__form">
+        <h2 class="title contacts__title">Оставить заявку</h2>
+        <input class="contacts__input" type="text" placeholder="Как Вас зовут?">
+        <input class="contacts__input" type="text" placeholder="Ваш номер телефона?">
+        <button class="button contacts__button" type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+</section>
+      
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__item">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/icon/logo-white.svg" alt="logo">
+      </a>
+      <p class="footer__copy">
+        Политика конфиденциальности
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
